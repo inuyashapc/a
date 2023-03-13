@@ -1,23 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
-
-function App() {
+import Header from './componants/Header';
+import Content from './componants/Content';
+import About from './componants/About';
+import { Route, Routes } from 'react-router-dom';
+function App() {//element no can nhan la 1 react element
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path="/" element={<Header />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+      <Content />
     </div>
   );
 }

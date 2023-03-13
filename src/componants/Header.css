@@ -1,0 +1,9 @@
+header{
+    border: 2px solid blue;
+    width: 80%;
+    margin: 0px auto;
+}
+header .top{
+    text-align: right;
+    line-height: 25px;
+}
